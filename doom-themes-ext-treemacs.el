@@ -213,7 +213,8 @@ This is used to generate extensions for `treemacs' from `all-the-icons-icon-alis
                       "scribble" "scss" "sh" "sql" "sql" "styles" "sv" "tex"
                       "toml" "tpp" "tridactylrc" "ts" "tsx" "v" "vagrantfile"
                       "vagrantfile" "vh" "vimperatorrc" "vimrc" "vrapperrc"
-                      "vue" "xml" "xsl" "yaml" "yml" "zsh" "zshrc"))
+                      "vue" "xml" "xsl" "yaml" "yml" "zsh" "zshrc")
+         :fallback (format "  %s\t" (all-the-icons-octicon "file-code" :v-adjust 0 :face face-spec)))
         (treemacs-create-icon
          :icon (format "  %s\t" (all-the-icons-octicon "book" :v-adjust 0 :face face-spec))
          :extensions ("lrf" "lrx" "cbr" "cbz" "cb7" "cbt" "cba" "chm" "djvu"
