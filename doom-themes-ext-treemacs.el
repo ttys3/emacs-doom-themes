@@ -172,9 +172,7 @@ This is used to generate extensions for `treemacs' from `all-the-icons-icon-alis
                        (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
                        (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec))
          :extensions (dir-closed)
-         :fallback (format "%s\t%s\t"
-                       (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
-                       (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec)))
+         :fallback (format "%s " (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec)))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
                        (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
@@ -217,7 +215,7 @@ This is used to generate extensions for `treemacs' from `all-the-icons-icon-alis
                       "toml" "tpp" "tridactylrc" "ts" "tsx" "v" "vagrantfile"
                       "vagrantfile" "vh" "vimperatorrc" "vimrc" "vrapperrc"
                       "vue" "xml" "xsl" "yaml" "yml" "zsh" "zshrc")
-         :fallback (format "  %s\t" (all-the-icons-octicon "file-code" :v-adjust 0 :face face-spec)))
+         :fallback (format "%s " (all-the-icons-octicon "file-code" :v-adjust 0 :face face-spec)))
         (treemacs-create-icon
          :icon (format "  %s\t" (all-the-icons-octicon "book" :v-adjust 0 :face face-spec))
          :extensions ("lrf" "lrx" "cbr" "cbz" "cb7" "cbt" "cba" "chm" "djvu"
