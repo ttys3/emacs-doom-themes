@@ -171,7 +171,10 @@ This is used to generate extensions for `treemacs' from `all-the-icons-icon-alis
          :icon (format "%s\t%s\t"
                        (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
                        (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec))
-         :extensions (dir-closed))
+         :extensions (dir-closed)
+         :fallback (format "%s\t%s\t"
+                       (all-the-icons-octicon "chevron-right" :height 0.75 :v-adjust 0.1 :face face-spec)
+                       (all-the-icons-octicon "file-directory" :v-adjust 0 :face face-spec)))
         (treemacs-create-icon
          :icon (format "%s\t%s\t"
                        (all-the-icons-octicon "chevron-down" :height 0.75 :v-adjust 0.1 :face face-spec)
